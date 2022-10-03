@@ -25,7 +25,7 @@ public class ManagementLoginFormController implements Loader {
     public JFXTextField txtUserName;
     public JFXPasswordField txtPassword;
     public JFXButton btnLogin;
-
+///
     String uName="abhishek";
     String pWord="abhishek";
 
