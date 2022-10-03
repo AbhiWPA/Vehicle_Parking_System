@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="260.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementLoginFormController">
+   <children>
+      <ImageView fitHeight="259.0" fitWidth="307.0" layoutX="203.0" layoutY="1.0" opacity="0.33" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/management.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="157.0" layoutY="62.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="133.0" text="Password">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" focusColor="BLACK" layoutX="267.0" layoutY="60.0" prefHeight="25.0" prefWidth="256.0">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="171.0" layoutY="198.0" onAction="#btnCancelOnAction" prefHeight="7.0" prefWidth="165.0" ripplerFill="#c3c3c3" style="-fx-background-color: #ea2424;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPassword" focusColor="BLACK" layoutX="267.0" layoutY="131.0" prefHeight="25.0" prefWidth="256.0">
+         <font>
+            <Font size="15.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="383.0" layoutY="198.0" onAction="#btnLoginOnAction" prefHeight="7.0" prefWidth="165.0" ripplerFill="#c8ccd0" style="-fx-background-color: #ea2424;" text="Log in" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="141.0" layoutY="1.0" orientation="VERTICAL" prefHeight="259.0" prefWidth="6.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="259.0" stroke="BLACK" strokeType="INSIDE" width="143.0">
+         <fill>
+            <LinearGradient endX="0.40476190476190477" endY="0.03333333333333333" startX="0.4" startY="1.0">
+               <stops>
+                  <Stop color="#edeff2" />
+                  <Stop color="#edeff2" offset="0.007662835249042145" />
+                  <Stop color="#2978ff" offset="0.17624521072796934" />
+                  <Stop color="#de263a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="16.0" layoutY="62.0" text="Saman" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="109.0" text="Rice" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="163.0" text="Management Login" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
